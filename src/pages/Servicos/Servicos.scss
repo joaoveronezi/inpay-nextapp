@@ -1,0 +1,36 @@
+.servicesContainer {
+  padding-top: 5%;
+}
+.servicesTitle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Poppins-Bold";
+  color: black;
+  font-size: 18px;
+}
+.serviceMosaic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6%;
+}
+
+.Servicos {
+  position: absolute;
+  transform: rotate(270deg);
+  letter-spacing: 12px;
+  color: #054cb4;
+  left: -100px;
+  bottom: -2470px;
+  font-size: 17px;
+  z-index: -3;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 1025px) {
+    bottom: -1700px;
+    left: -130px;
+    font-size: 14px;
+  }
+}
