@@ -1,14 +1,21 @@
-.cardImage {
+import styled from "styled-components";
+
+export const CardImage = styled.img`
   width: 90px;
   height: 90px;
   margin: 0 auto;
-}
-.cardContainer {
+`;
+
+export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.card {
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,20 +25,12 @@
   margin: 40px;
   h3 {
     text-align: center;
-    font-family: "Montserrat-Light";
+    font-weight: bold;
+    font-family: "Montserrat";
     margin-top: 40px;
     height: 30px;
   }
-}
-// Responsividade
-@media screen and (max-width: 1024px) {
-  .card {
+  @media (max-width: 1024px) {
     width: 200px;
   }
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .cardContainer {
-    flex-direction: column;
-  }
-}
+`;

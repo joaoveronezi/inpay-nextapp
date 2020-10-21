@@ -1,23 +1,23 @@
 import React from "react";
 
-import "./Servicos.scss";
-import acomp from "../../assets/images/icons/acomp.png";
-import amigo from "../../assets/images/icons/amigo.png";
-import consul from "../../assets/images/icons/consul.png";
-import invest from "../../assets/images/icons/invest.png";
-import parceria from "../../assets/images/icons/parceria.png";
-import plat from "../../assets/images/icons/plat.png";
+import acomp from "../../../public/images/icons/acomp.png";
+import amigo from "../../../public/images/icons/amigo.png";
+import consul from "../../../public/images/icons/consul.png";
+import invest from "../../../public/images/icons/invest.png";
+import parceria from "../../../public/images/icons/parceria.png";
+import plat from "../../../public/images/icons/plat.png";
 import Card from "../Card";
+import { ServicesContainer, SideText, TitleContainer, ServiceMosaic } from "./Servicos.style";
 
 const Servicos = () => {
   return (
-    <div className="servicesContainer">
-      <p className="Servicos"> - Serviços Oferecidos</p>
+    <ServicesContainer>
+      <SideText> - Serviços Oferecidos</SideText>
 
-      <div className="servicesTitle" id="servicesContainer">
-        <h1>Serviços</h1>
-      </div>
-      <div className="serviceMosaic">
+      <TitleContainer id="servicesContainer">
+        <h3>Serviços</h3>
+      </TitleContainer>
+      <ServiceMosaic>
         <Card
           image={acomp}
           title="Acompanhamento Online"
@@ -40,8 +40,8 @@ const Servicos = () => {
           title3="Parceria com Bancos e Corretoras"
           alt3="Parceria com Bancos e Corretoras"
         />
-      </div>
-    </div>
+      </ServiceMosaic>
+    </ServicesContainer>
   );
 };
 

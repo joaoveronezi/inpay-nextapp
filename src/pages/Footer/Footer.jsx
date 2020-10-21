@@ -1,55 +1,57 @@
 import React from "react";
 
-import Logo from "../../assets/images/logo.png";
-import FacebookIcon from "../../assets/images/icons/facebook.png";
-import InstagramIcon from "../../assets/images/icons/instagram.png";
-import LinkedinIcon from "../../assets/images/icons/linkedin.png";
-import "./Footer.scss";
+import Logo from "../../../public/images/logo.png";
+import FacebookIcon from "../../../public/images/icons/facebook.png";
+import InstagramIcon from "../../../public/images/icons/instagram.png";
+import LinkedinIcon from "../../../public/images/icons/linkedin.png";
+import {
+  FooterContainer,
+  TopWrapper,
+  LogosWrapper,
+  ContatoContainer,
+  DownWrapper,
+  LogoFooter,
+  LogoSocial,
+} from "./Footer.style";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div id="footerContainer">
-        <div className="LSideContato">
+    <FooterContainer>
+      <TopWrapper id="footerContainer">
+        <LogosWrapper>
           <a href="/#">
-            <img src={Logo} className="logoFooter" alt="logo" />
+            <LogoFooter src={Logo} alt="logo" />
           </a>
-          <div className="Logos">
+          <div>
             <a href="/#">
-              <img src={FacebookIcon} className="socialLogo" alt="logo" />
+              <LogoSocial src={FacebookIcon} alt="logo" />
             </a>
             <a
               href="https://www.linkedin.com/company/inpay-solu%C3%A7%C3%B5es-financeiras/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src={LinkedinIcon} className="socialLogo" alt="logo" />
+              <LogoSocial src={LinkedinIcon} alt="logo" />
             </a>
-            <a
-              href="https://www.instagram.com/in.pay"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img src={InstagramIcon} className="socialLogo" alt="logo" />
+            <a href="https://www.instagram.com/in.pay" rel="noopener noreferrer" target="_blank">
+              <LogoSocial src={InstagramIcon} alt="logo" />
             </a>
           </div>
-        </div>
-        <div className="RSideContato">
+        </LogosWrapper>
+        <ContatoContainer>
           <p>
-            Avenida Barão Homem de Melo 4500 5° Andar, sala 511 <br />
+            Avenida Barão Homem de Melo 4500 5° Andar, sala 511
+            <br />
             Belo Horizonte - MG,
             <br />
             Brasil 30494-270
           </p>
-        </div>
-      </div>
-      <div className="copyright">
-        <p>
-          Copyright © 2020 - INPAY Soluções Financeiras - Todos os direitos
-          reservados.
-        </p>
-      </div>
-    </div>
+        </ContatoContainer>
+      </TopWrapper>
+      <DownWrapper>
+        <p>Copyright © 2020 - INPAY Soluções Financeiras - Todos os direitos reservados.</p>
+      </DownWrapper>
+    </FooterContainer>
   );
 };
 

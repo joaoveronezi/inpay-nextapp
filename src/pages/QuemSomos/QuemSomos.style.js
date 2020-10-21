@@ -1,8 +1,11 @@
-#quemsomos {
+import styled from "styled-components";
+
+export const Container = styled.div`
   display: flex;
   flex-flow: column wrap;
-}
-.Escrito {
+`;
+
+export const SideText = styled.p`
   position: absolute;
   transform: rotate(270deg);
   bottom: -1000px;
@@ -18,4 +21,4 @@
     font-size: 14px;
     left: -40px;
   }
-}
+`;

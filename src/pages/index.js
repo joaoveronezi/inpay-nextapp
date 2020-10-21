@@ -1,9 +1,18 @@
 import React from "react";
+import Servicos from "./Servicos";
+import QuemSomos from "./QuemSomos";
+import Header from "./Header";
+import Home from "./Home";
+import Footer from "./Footer";
 
 export default function MyApp() {
   return (
-    <div>
-      <h1>Inpay next app</h1>
-    </div>
+    <>
+      <Home />
+      <Header />
+      <QuemSomos />
+      <Servicos />
+      <Footer />
+    </>
   );
 }
