@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import Head from "next/head";
-// import NavBar from "../components/NavBar";
 import GlobalStyle from "../assets/styles/global";
 
 const App = ({ Component, pageProps }) => {

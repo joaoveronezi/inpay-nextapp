@@ -1,12 +1,12 @@
 import React from "react";
-import Servicos from "./Servicos";
-import QuemSomos from "./QuemSomos";
-import Header from "./Header";
-import Home from "./Home";
-import Footer from "./Footer";
+import Servicos from "../components/Servicos";
+import QuemSomos from "../components/QuemSomos";
+import Header from "../components/Header";
+import Home from "../components/Home";
+import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 
-export default function MyApp() {
+const MyApp = () => {
   return (
     <>
       <Home />
@@ -17,4 +17,6 @@ export default function MyApp() {
       <Footer />
     </>
   );
-}
+};
+
+export default MyApp;
