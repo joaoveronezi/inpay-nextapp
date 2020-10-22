@@ -27,21 +27,26 @@ export const HomeContentWrapper = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  flex-shrink: 3;
-  flex: 40%;
-  font-family: "Montserrat", Arial;
-  font-size: 65px;
-  color: white;
-  text-align: right;
-  padding-right: 3%;
-  h6 {
-    font-size: 30px;
-    font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
+  width: 40%;
+  h2 {
+    font-family: "Roboto";
+    color: white;
+    font-size: 65px;
+    margin: 25px;
+    padding-right: 30px;
+    width: 100%;
   }
-  @media (max-width: 768px) {
-    font-size: 35px;
+  p {
+    margin: 25px;
+    color: white;
+    padding-right: 35px;
   }
 `;
+
 export const MockContainer = styled.div`
   display: flex;
   justify-content: center;

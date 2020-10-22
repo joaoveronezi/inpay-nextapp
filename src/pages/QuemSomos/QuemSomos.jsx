@@ -1,10 +1,10 @@
 import React from "react";
-
-import "./QuemSomos.scss";
 import About from "../AboutInfo";
 import img1 from "../../../public/images/MocaDindin3.png";
 import img2 from "../../../public/images/MocoGrafico2.png";
 import img3 from "../../../public/images/MocaVoando2.png";
+
+import { Container, SideText } from "./QuemSomos.style";
 
 const QuemSomos = () => {
   const text = [
@@ -13,23 +13,13 @@ const QuemSomos = () => {
     "Nossos valores se fundamentam em educação financeira para todos, transparência e empoderamento de pessoas quando o assunto é se planejar e investir.",
   ];
   return (
-    <div id="quemsomos">
+    <Container id="quemsomos">
       <About img={img1} title="Quem somos nós" text={text[0]} turn={false} />
-      <About
-        img={img2}
-        title="Onde queremos chegar"
-        text={text[1]}
-        turn
-      />
+      <About img={img2} title="Onde queremos chegar" text={text[1]} turn />
 
-      <About
-        img={img3}
-        title="Em que acreditamos"
-        text={text[2]}
-        turn={false}
-      />
-      <p className="Escrito"> - Sobre Nós</p>
-    </div>
+      <About img={img3} title="Em que acreditamos" text={text[2]} turn={false} />
+      <SideText className="Escrito"> - Sobre Nós</SideText>
+    </Container>
   );
 };
 

@@ -1,4 +1,6 @@
-#footerContainer {
+import styled from "styled-components";
+
+export const TopWrapper = styled.div`
   background-color: #054cb4;
   display: flex;
   height: 400px;
@@ -7,36 +9,40 @@
     flex-direction: column;
     align-items: center;
   }
-}
-.footer {
+`;
+
+export const FooterContainer = styled.div`
   background-color: #054cb4;
-  .copyright {
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: #0345a6;
-    @media (max-width: 520px) {
-      text-align: center;
-    }
+`;
+export const DownWrapper = styled.div`
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #0345a6;
+  @media (max-width: 520px) {
+    text-align: center;
   }
-}
-.LSideContato {
+`;
+
+export const LogosWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 10px;
   align-items: center;
-  .logoFooter {
-    padding-bottom: 10%;
-    width: 200px;
-  }
-  .socialLogo {
-    width: 40px;
-    margin: 10px;
-  }
-}
-.RSideContato {
+`;
+export const LogoFooter = styled.img`
+  padding-bottom: 10%;
+  width: 200px;
+`;
+
+export const LogoSocial = styled.img`
+  width: 40px;
+  margin: 10px;
+`;
+
+export const ContatoContainer = styled.div`
   width: 300px;
   display: flex;
   align-content: center;
@@ -48,14 +54,11 @@
     line-height: 30px;
     font-size: 18px;
     text-align: end;
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat";
     color: white;
     @media (max-width: 520px) {
       font-size: 15px;
       text-align: center;
     }
   }
-}
-
-@media (max-width: 768px) {
-}
+`;

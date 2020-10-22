@@ -1,22 +1,31 @@
-.servicesContainer {
+import styled from "styled-components";
+
+export const ServicesContainer = styled.div`
   padding-top: 5%;
-}
-.servicesTitle {
+`;
+
+export const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: "Poppins-Bold";
-  color: black;
-  font-size: 18px;
-}
-.serviceMosaic {
+  margin: 0 auto;
+  width: 100%;
+  h3 {
+    font-family: "Poppins";
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
+  }
+`;
+
+export const ServiceMosaic = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6%;
-}
+`;
 
-.Servicos {
+export const SideText = styled.p`
   position: absolute;
   transform: rotate(270deg);
   letter-spacing: 12px;
@@ -33,4 +42,4 @@
     left: -130px;
     font-size: 14px;
   }
-}
+`;
