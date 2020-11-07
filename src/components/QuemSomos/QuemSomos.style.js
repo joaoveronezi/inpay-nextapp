@@ -13,6 +13,7 @@ export const SideText = styled.p`
   z-index: -3;
   color: #054cb4;
   font-size: 17px;
+  font-weight: bold;
   @media (max-width: 768px) {
     display: none;
   }

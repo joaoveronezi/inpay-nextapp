@@ -34,6 +34,7 @@ export const SideText = styled.p`
   bottom: -2470px;
   font-size: 17px;
   z-index: -3;
+  font-weight: bold;
   @media (max-width: 768px) {
     display: none;
   }
